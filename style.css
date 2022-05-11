@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+header,
+footer {
+  background: #8b0074;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+main {
+  height: calc(100vh - 207px);
+  padding-block: 50px;
+}
+
+.scores {
+  border: 3px solid #8b0074;
+  border-radius: 50%;
+  width: 300px;
+  margin: 0 auto;
+  color: rgb(41, 41, 41);
+  font-size: 70px;
+  text-align: center;
+  position: relative;
+  padding-block: 20px;
+}
+
+.badge {
+  background: darkgoldenrod;
+  color: #fff;
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 10%;
+}
+
+.badge:first-child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15%;
+}
+.badge:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10%;
+}
+.result {
+  font-size: 30px;
+  color: rgb(41, 41, 41);
+  text-align: center;
+  padding-block: 50px;
+}
+.options {
+  text-align: center;
+}
+.option {
+  display: inline-block;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+  border-bottom-left-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.option:hover {
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+img {
+  width: 150px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.credits {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.credits-copyright {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  line-height: 50px;
+  padding-right: 15px;
+}
+
+.credits-link {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+.credits-link:hover {
+  color: rgba(229, 211, 252, 0.856);
+}
+footer img {
+  width: 80px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* overflow: auto; Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+
+  border-radius: 8px;
+  width: 50%;
+}
+.modal-header {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 18px;
+  color: #333333;
+}
+button {
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #8b0074;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background-color: #b60198;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  line-height: 38px;
+
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.table {
+  font-size: 20px;
+  position: absolute;
+  top: 150px;
+  left: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.table-inner,
+.table-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

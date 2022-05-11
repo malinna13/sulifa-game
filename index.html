@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <header><h1>Камень - Ножницы - Бумага</h1></header>
+
+    <main>
+      <!-- Table -->
+      <div class="table">
+        <div class="table-header">
+          <h4>Результаты:</h4>
+          <p>Игрок - Бот</p>
+        </div>
+        <div class="table-inner"></div>
+      </div>
+      <div class="scores">
+        <div class="badge">Игрок</div>
+        <div class="badge">Бот</div>
+        <span id="user-score">0</span>:<span id="bot-score">0</span>
+      </div>
+
+      <div class="result">
+        <p></p>
+      </div>
+      <div class="options">
+        <div class="option" id="rock">
+          <img src="rock.png" alt="камень" />
+        </div>
+        <div class="option" id="scissors">
+          <img src="scissors.png" alt="ножницы" />
+        </div>
+        <div class="option" id="paper">
+          <img src="paper.png" alt="бумага" />
+        </div>
+      </div>
+    </main>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 class="modal-header"></h3>
+
+        <button>Давай еще 10</button>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="credits">
+          <div class="credits-copyright">
+            <p>&copy;</p>
+            <p>2022</p>
+            <a class="credits-link" href="https://github.com/malinna13"
+              >github</a
+            >
+          </div>
+          <a href="https://rs.school/js-stage0/" class="credits-link"
+            ><img src="rs_school_js.svg" alt="logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
